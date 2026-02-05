@@ -1,0 +1,12 @@
+@page
+@model Biblioteca.Pages.Account.LogoutModel
+@{
+    ViewData["Title"] = "Cerrar sesión";
+}
+
+<form method="post">
+    <p>¿Seguro que deseas cerrar sesión?</p>
+    <button type="submit" class="btn btn-danger">Cerrar sesión</button>
+    <a asp-page="/Index" class="btn btn-secondary">Cancelar</a>
+</form>
+

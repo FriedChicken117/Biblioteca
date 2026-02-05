@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Books>
+  <Book>
+    <Id>1</Id>
+    <Title>El Quijote</Title>
+    <Author>Miguel de Cervantes</Author>
+    <Category>Clásico</Category>
+    <Summary>Las aventuras de Don Quijote y Sancho Panza.</Summary>
+  </Book>
+  <Book>
+    <Id>2</Id>
+    <Title>Cien años de soledad</Title>
+    <Author>Gabriel García Márquez</Author>
+    <Category>Realismo mágico</Category>
+    <Summary>La historia de la familia Buendía en Macondo.</Summary>
+  </Book>
+  <Book>
+    <Id>3</Id>
+    <Title>El Hombre Invisible</Title>
+    <Author>H. G. Wells</Author>
+    <Category>Ciencia Ficcion</Category>
+    <Summary>En un pequeño pueblo en medio de una tormenta llega un extraño hombre </Summary>
+  </Book>
+  <Book>
+    <Id>4</Id>
+    <Title>Drácula</Title>
+    <Author>Bram Stoker</Author>
+    <Category>Terror</Category>
+    <Summary>Una criatura inmortal acecha por la noche</Summary>
+  </Book>
+  <Book>
+    <Id>5</Id>
+    <Title>Narnia</Title>
+    <Author>C.S. Lewis</Author>
+    <Category>Fantasía</Category>
+    <Summary>Un mundo magico paralelo al nuestro</Summary>
+  </Book>
+  <Book>
+    <Id>6</Id>
+    <Title>La náusea</Title>
+    <Author>Jean Paul Sartre</Author>
+    <Category>Literatura</Category>
+    <Summary>Novela existencialista sobre las desventuras de un joven</Summary>
+  </Book>
+</Books>

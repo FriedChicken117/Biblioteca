@@ -1,0 +1,91 @@
+@page "{id:int}"
+@model Biblioteca.Pages.Books.DetailsModel
+@{
+    ViewData["Title"] = "Detalles del libro";
+}
+
+@if (Model.Book is null)
+{
+    <div class="alert alert-danger">Libro no encontrado.</div>
+}
+else
+{
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <h2>@Model.Book.Title</h2>
+            <p class="text-muted">
+                <strong>Autor:</strong> @Model.Book.Author<br />
+                <strong>Categoría:</strong> @Model.Book.Category
+            </p>
+            <p>@Model.Book.Summary</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Reseñas</h4>
+
+            @if (!Model.Reviews.Any())
+            {
+                <p class="text-muted">Aún no hay reseñas para este libro.</p>
+            }
+            else
+            {
+                <ul class="list-group mb-4">
+                    @foreach (var review in Model.Reviews)
+                    {
+                        <li class="list-group-item">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <strong>@review.UserName</strong>
+                                    <span class="text-warning ms-2">
+                                        @for (int i = 0; i < review.Rating; i++)
+                                        {
+                                            <span>&#9733;</span>
+                                        }
+                                        @for (int i = review.Rating; i < 5; i++)
+                                        {
+                                            <span class="text-muted">&#9733;</span>
+                                        }
+                                    </span>
+                                </div>
+                                <small class="text-muted">@review.CreatedAt.ToLocalTime().ToString("g")</small>
+                            </div>
+                            <p class="mb-0 mt-2">@review.Comment</p>
+                        </li>
+                    }
+                </ul>
+            }
+
+            @if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <h4>Dejar una reseña</h4>
+                <form method="post">
+                    <div class="mb-3">
+                        <label asp-for="NewReview.Rating" class="form-label">Calificación (1 a 5)</label>
+                        <input asp-for="NewReview.Rating" class="form-control" type="number" min="1" max="5" />
+                        <span asp-validation-for="NewReview.Rating" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="NewReview.Comment" class="form-label">Comentario</label>
+                        <textarea asp-for="NewReview.Comment" class="form-control" rows="4"></textarea>
+                        <span asp-validation-for="NewReview.Comment" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar reseña</button>
+                </form>
+            }
+            else
+            {
+                <div class="alert alert-info mt-3">
+                    Debes <a asp-page="/Account/Login" asp-route-returnUrl="@Url.Page("/Books/Details", new { id = Model.Book.Id })">iniciar sesión</a>
+                    o <a asp-page="/Account/Register" asp-route-returnUrl="@Url.Page("/Books/Details", new { id = Model.Book.Id })">registrarte</a> para dejar una reseña.
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

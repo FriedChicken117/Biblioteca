@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User>
+    <Id>1</Id>
+    <UserName>admin</UserName>
+    <PasswordHash>jGl25bVBBBW96Qi9Te4V37Fnqchz/Eu4qB9vKrRIqRg=</PasswordHash>
+    <IsAdmin>True</IsAdmin>
+  </User>
+  <User>
+    <Id>2</Id>
+    <UserName>usuario1</UserName>
+    <PasswordHash>WZRHGrsBESr8wYFZ9sx0tPURuZgG2lmzyvWpwXPKz8U=</PasswordHash>
+    <IsAdmin>False</IsAdmin>
+  </User>
+  <User>
+    <Id>3</Id>
+    <UserName>usuario_2225</UserName>
+    <PasswordHash>jZae727K08KaOmKSgOaGzww/XVqGr/PKEgIMkjrcbJI=</PasswordHash>
+    <IsAdmin>False</IsAdmin>
+  </User>
+  <User>
+    <Id>4</Id>
+    <UserName>usuario_2222</UserName>
+    <PasswordHash>A6xnQhbz4Vx2HuGl4lXwZ5U2I8iziLRFnhP5eNfIRvQ=</PasswordHash>
+    <IsAdmin>False</IsAdmin>
+  </User>
+</Users>

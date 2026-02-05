@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Bienvenido a la Biblioteca Digital";
+}
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h1 class="display-5">Biblioteca</h1>
+        <p class="text-muted">Explora los libros y lee las reseñas de otros usuarios.</p>
+    </div>
+</div>
+
+<form method="get" class="row g-2 mb-4">
+    <div class="col-md-4">
+        <input asp-for="Search" class="form-control" placeholder="Buscar por título o autor" />
+    </div>
+    <div class="col-md-3">
+        <input asp-for="Author" class="form-control" placeholder="Autor" />
+    </div>
+    <div class="col-md-3">
+        <select asp-for="Category" class="form-select">
+            <option value="">Todas las categorías</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category">@category</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2 d-grid">
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Categoría</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var book in Model.Books)
+    {
+        <tr>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.Category</td>
+            <td class="text-end">
+                <a asp-page="/Books/Details" asp-route-id="@book.Id" class="btn btn-sm btn-outline-primary">
+                    Ver detalles
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

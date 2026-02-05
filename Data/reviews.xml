@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Reviews>
+  <Review>
+    <Id>1</Id>
+    <BookId>2</BookId>
+    <UserName>usuario1</UserName>
+    <Rating>5</Rating>
+    <Comment>texto</Comment>
+    <CreatedAt>2026-02-05T16:35:38.9363988Z</CreatedAt>
+  </Review>
+  <Review>
+    <Id>3</Id>
+    <BookId>5</BookId>
+    <UserName>admin</UserName>
+    <Rating>5</Rating>
+    <Comment>Texto</Comment>
+    <CreatedAt>2026-02-05T17:52:53.4113214Z</CreatedAt>
+  </Review>
+  <Review>
+    <Id>4</Id>
+    <BookId>6</BookId>
+    <UserName>admin</UserName>
+    <Rating>5</Rating>
+    <Comment>Texto</Comment>
+    <CreatedAt>2026-02-05T19:16:18.0018600Z</CreatedAt>
+  </Review>
+</Reviews>
