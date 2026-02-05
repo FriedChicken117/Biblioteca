@@ -27,16 +27,13 @@ Biblioteca  Aplicación ASP.NET Core con XML y Razor Pages
  Bootstrap 5 para el diseño visual.
 
  Ejecución del proyecto:
-  1.Instalar el SDK de .NET 8.0.
-  2.Clonar o copiar el proyecto:
-    git clone <urldelrepositorio>
-    cd Biblioteca
+  1.Instalar Visual Studio 2022 o superior y el SDK de .NET 8.
+  2.Clonar el proyecto con el siguiente enlace:
+    https://github.com/FriedChicken117/Biblioteca.git
+    o descargar en formato zip desde el repositorio de GitHub.
   3.Restaurar y compilar:
     dotnet build
-  4.Ejecutar:
-    dotnet run
-  5.Abrir el navegador en la URL que indique la consola, normalmente:
-    https://localhost:5001 o https://localhost:7060 (según configuración).
+  4.Ejecutar.
 
  Usuario administrador
 
