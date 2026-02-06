@@ -54,7 +54,6 @@ public class XmlDataService
 
         if (!File.Exists(_usersPath))
         {
-            // Usuario inicial: admin / admin
             var admin = new User
             {
                 Id = 1,
@@ -89,7 +88,6 @@ public class XmlDataService
             return;
         }
 
-        // Marcar solo un super usuario: el usuario con nombre "admin"
         foreach (var user in users)
         {
             var userName = (string?)user.Element("UserName") ?? string.Empty;
