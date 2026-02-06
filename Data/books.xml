@@ -42,4 +42,85 @@
     <Category>Literatura</Category>
     <Summary>Novela existencialista sobre las desventuras de un joven</Summary>
   </Book>
+
+    <Book>
+    <Id>7</Id>
+    <Title>1984</Title>
+    <Author>George Orwell</Author>
+    <Category>Distopía</Category>
+    <Summary>Una crítica al totalitarismo y la vigilancia masiva en un futuro opresivo.</Summary>
+    </Book>
+
+    <Book>
+    <Id>8</Id>
+    <Title>El Resplandor</Title>
+    <Author>Stephen King</Author>
+    <Category>Terror</Category>
+    <Summary>Un escritor se traslada con su familia a un hotel aislado donde fuerzas oscuras lo acechan.</Summary>
+    </Book>
+
+    <Book>
+    <Id>9</Id>
+    <Title>Dune</Title>
+    <Author>Frank Herbert</Author>
+    <Category>Ciencia ficción</Category>
+    <Summary>La lucha política y mística por el control del planeta desértico Arrakis.</Summary>
+    </Book>
+
+    <Book>
+    <Id>10</Id>
+    <Title>El Principito</Title>
+    <Author>Antoine de Saint-Exupéry</Author>
+    <Category>Fábula</Category>
+    <Summary>Un joven príncipe viaja por el universo descubriendo la peculiar naturaleza de los adultos.</Summary>
+    </Book>
+
+    <Book>
+    <Id>11</Id>
+    <Title>Orgullo y Prejuicio</Title>
+    <Author>Jane Austen</Author>
+    <Category>Novela romántica</Category>
+    <Summary>Las complicaciones del amor y las clases sociales en la Inglaterra del siglo XIX.</Summary>
+    </Book>
+
+    <Book>
+    <Id>12</Id>
+    <Title>Crónica de una muerte anunciada</Title>
+    <Author>Gabriel García Márquez</Author>
+    <Category>Novela corta</Category>
+    <Summary>Un pueblo entero sabe que Santiago Nasar va a ser asesinado, pero nadie lo detiene.</Summary>
+    </Book>
+
+    <Book>
+    <Id>13</Id>
+    <Title>Sherlock Holmes: Estudio en escarlata</Title>
+    <Author>Arthur Conan Doyle</Author>
+    <Category>Misterio</Category>
+    <Summary>La primera aventura donde el Dr. Watson conoce al brillante detective Sherlock Holmes.</Summary>
+    </Book>
+
+    <Book>
+    <Id>14</Id>
+    <Title>El Hobbit</Title>
+    <Author>J.R.R. Tolkien</Author>
+    <Category>Fantasía epica</Category>
+    <Summary>Bilbo Bolsón emprende un viaje inesperado para recuperar un tesoro custodiado por un dragón.</Summary>
+    </Book>
+
+    <Book>
+    <Id>15</Id>
+    <Title>Los pilares de la Tierra</Title>
+    <Author>Ken Follett</Author>
+    <Category>Ficción histórica</Category>
+    <Summary>La construcción de una catedral gótica en medio de conflictos políticos y religiosos.</Summary>
+    </Book>
+
+    <Book>
+    <Id>16</Id>
+    <Title>Fahrenheit 451</Title>
+    <Author>Ray Bradbury</Author>
+    <Category>Ciencia ficción</Category>
+    <Summary>Un bombero cuya tarea es quemar libros empieza a cuestionar la sociedad censurada en la que vive.</Summary>
+    </Book>
 </Books>
+	

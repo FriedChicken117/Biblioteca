@@ -8,6 +8,7 @@
     <Comment>texto</Comment>
     <CreatedAt>2026-02-05T16:35:38.9363988Z</CreatedAt>
   </Review>
+	
   <Review>
     <Id>3</Id>
     <BookId>5</BookId>
@@ -16,6 +17,7 @@
     <Comment>Texto</Comment>
     <CreatedAt>2026-02-05T17:52:53.4113214Z</CreatedAt>
   </Review>
+	
   <Review>
     <Id>4</Id>
     <BookId>6</BookId>
@@ -24,4 +26,49 @@
     <Comment>Texto</Comment>
     <CreatedAt>2026-02-05T19:16:18.0018600Z</CreatedAt>
   </Review>
+	
+    <Review>
+    <Id>5</Id>
+    <BookId>7</BookId>
+    <UserName>admin</UserName>
+    <Rating>5</Rating>
+    <Comment>Una obra maestra.</Comment>
+    <CreatedAt>2026-02-06T08:15:22.0018600Z</CreatedAt>
+    </Review>
+
+    <Review>
+    <Id>8</Id>
+    <BookId>4</BookId>
+    <UserName>usuario1</UserName>
+    <Rating>4</Rating>
+    <Comment>Mucho mejor que la película</Comment>
+    <CreatedAt>2026-02-06T09:30:10.0018600Z</CreatedAt>
+    </Review>
+
+    <Review>
+    <Id>9</Id>
+    <BookId>9</BookId>
+    <UserName>admin</UserName>
+    <Rating>5</Rating>
+    <Comment>Increíble.</Comment>
+    <CreatedAt>2026-02-06T10:02:45.0018600Z</CreatedAt>
+    </Review>
+
+    <Review>
+    <Id>8</Id>
+    <BookId>6</BookId>
+    <UserName>usuario1</UserName>
+    <Rating>5</Rating>
+    <Comment>Amazing.</Comment>
+    <CreatedAt>2026-02-06T10:05:12.0018600Z</CreatedAt>
+    </Review>
+
+    <Review>
+    <Id>9</Id>
+    <BookId>10</BookId>
+	<UserName>admin</UserName>
+	<Rating>3</Rating>
+	<Comment>El ritmo es lento a veces.</Comment>
+	<CreatedAt>2026-02-06T10:07:33.0018600Z</CreatedAt>
+    </Review>
 </Reviews>
